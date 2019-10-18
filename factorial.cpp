@@ -1,15 +1,17 @@
+    // Program to find the factorial of a number
+
     #include <iostream>
     using namespace std;
     int main()
     {
-        int n;
-        int factorial = 1;
+        unsigned int num;
+        unsigned long long int factorial = 1;
         cout << "Enter a positive integer: ";
-        cin >> n;
-        for(int i = 1; i <=n; ++i)
+        cin >> num;
+        for(int i = 1; i <=num; ++i)
         {
             factorial *= i;
         }
-        cout << "Factorial of " << n << " = " << factorial;    
+        cout << "Factorial of " << num << " = " << factorial;    
         return 0;
     }
