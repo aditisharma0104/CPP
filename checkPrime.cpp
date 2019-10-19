@@ -1,14 +1,17 @@
+    // Program to find if the number is prime or not
+
     #include <iostream>
+    #include<math.h>
     using namespace std;
     int main()
     {
-      int n, i;
+      int num, i;
       bool isPrime = true;
       cout << "Enter a positive integer: ";
-      cin >> n;
-      for(i = 2; i <= n / 2; ++i)
+      cin >> num;
+      for(i = 2; i <= sqrt(num); i++)
       {
-          if(n % i == 0)
+          if(num % i == 0)
           {
               isPrime = false;
               break;
